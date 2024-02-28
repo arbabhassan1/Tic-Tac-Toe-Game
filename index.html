@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="App.js"></script>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- or -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <div class="loader">
+      <img src="./loader.gif" alt="Loading" title="Loading" />
+    </div>
+    <div class="result" id="resultBox">
+      <div id="userwins">
+        <img src="./winner.gif" alt="Win" />
+        <h1>You Wins</h1>
+      </div>
+      <div id="compWins">
+        <img src="./loss.gif" alt="Lose" />
+        <h1>Computer Wins</h1>
+      </div>
+      <div id="matchdraw"><h1>Match Draw</h1></div>
+      <button id="restart" onclick="restartGame()">
+        <i class="bx bx-revision"></i>Restart
+      </button>
+    </div>
+
+    <header>
+      <a href=""
+        ><img src="./logo.png" alt="Logo" />
+        Tic Tac Toe
+      </a>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row1">
+          <div class="box" onclick="userClick(1)" id="box1"></div>
+          <div class="box" onclick="userClick(4)" id="box4"></div>
+          <div class="box" onclick="userClick(7) " id="box7"></div>
+        </div>
+        <div class="row2">
+          <div class="box" onclick="userClick(2)" id="box2"></div>
+          <div class="box" onclick="userClick(5)" id="box5"></div>
+          <div class="box" onclick="userClick(8)" id="box8"></div>
+        </div>
+        <div class="row3">
+          <div class="box" onclick="userClick(3)" id="box3"></div>
+          <div class="box" onclick="userClick(6)" id="box6"></div>
+          <div class="box" onclick="userClick(9)" id="box9"></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a href="https://arbabhassan.bio.link/" target="_blank"
+        >&lt;/&gt; & Crafted with 💛 Arbab Hassan
+      </a>
+    </footer>
+  </body>
+</html>
